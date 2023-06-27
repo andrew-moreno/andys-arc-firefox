@@ -1,8 +1,8 @@
 @import url(theming/color-andy.css);
 @import url(sidebar.css);
 @import url(sidebar-orientation/sidebar-right.css);
+@import url(captions.css);
 
-#back-button,
 #forward-button {
   display: none !important;
 }

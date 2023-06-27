@@ -50,7 +50,7 @@
 #main-window[titlepreface*="[S] "] #nav-bar {
   --blah: calc(var(--theme-spacing) + var(--theme-button-size));
   position: relative !important;
-  top: 3px !important;
+  top: 30px !important;
   overflow: visible !important;
   background: none !important;
   box-shadow: none !important;
@@ -69,6 +69,11 @@
   margin-left: -6px !important;
   height: 60px !important;
 }
+/* #main-window[titlepreface*="[S] "] #nav-bar toolbarbutton,
+#main-window[titlepreface*="[S] "] #nav-bar toolbaritem {
+  padding: 0 !important;
+  padding-inline: 2px !important;
+} */
 
 #main-window[titlepreface*="[S] "] #reload-button > .toolbarbutton-icon,
 #main-window[titlepreface*="[S] "] #stop-button > .toolbarbutton-icon {
@@ -280,6 +285,18 @@ toolbarbutton:where([disabled="true"]) {
   transition: 0.1s all;
   padding: var(--urlbar-container-padding) !important;
 }
+
+#main-window:not([titlepreface*="[S] "]) #nav-bar {
+  --blah: calc(var(--theme-spacing) + var(--theme-button-size));
+  position: relative !important;
+  overflow: visible !important;
+  background: none !important;
+  box-shadow: none !important;
+  margin-left: 5px !important;
+  -moz-window-dragging: drag;
+  z-index: 5000 !important;
+}
+
 #main-window:not([titlepreface="[S] "]) #tracking-protection-icon-container,
 #main-window:not([titlepreface="[S] "]) #urlbar-zoom-button,
 #main-window:not([titlepreface="[S] "]) #identity-icon-box,
