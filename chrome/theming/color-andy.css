@@ -3,19 +3,19 @@
 /* dark */
 :root[lwt-default-theme-in-dark-mode="true"],
 :root[style*="--lwt-accent-color: rgb(28, 27, 34)"] {
-  --lwt-accent-color: #181818 !important;
-  --lwt-accent-color-inactive: #181818 !important;
+  --lwt-accent-color: #131421 !important;
+  --lwt-accent-color-inactive: #131421 !important;
   --lwt-text-color: #e5e5e5 !important;
-  --toolbar-bgcolor: #181818 !important;
+  --toolbar-bgcolor: #131421 !important;
   --toolbar-color: #fff !important;
   --toolbarbutton-icon-fill: #fff !important;
   --chrome-content-separator-color: #2d2d2d !important;
   --lwt-toolbarbutton-icon-fill-attention: #4c98d1 !important;
   --toolbarbutton-icon-fill-attention: #4c98d1 !important;
   --lwt-tab-text: var(--toolbar-color) !important;
-  --lwt-selected-tab-background-color: #404040 !important;
-  --tab-selected-bgcolor: #404040 !important;
-  --toolbar-field-background-color: #404040 !important;
+  --lwt-selected-tab-background-color: #222436 !important;
+  --tab-selected-bgcolor: #830c0c !important;
+  --toolbar-field-background-color: #222436 !important;
   --toolbar-field-color: #fff !important;
   --toolbar-field-border-color: #0000 !important;
   --toolbar-field-focus-background-color: var(
@@ -29,7 +29,7 @@
   --urlbar-icon-fill-opacity: 1 !important;
   --urlbar-popup-url-color: #75b6e8 !important;
   --lwt-brighttext-url-color: var(--urlbar-popup-url-color) !important;
-  --autocomplete-popup-background: #181818 !important;
+  --autocomplete-popup-background: #131421 !important;
   --autocomplete-popup-color: #fff !important;
   --autocomplete-popup-highlight-background: #383838 !important;
   --autocomplete-popup-hover-background: #444444 !important;
@@ -42,12 +42,12 @@
   --button-primary-active-bgcolor: #005ca3 !important;
   --button-primary-color: #fff !important;
   --error-text-color: #ff9aa2 !important;
-  --input-bgcolor: #181818 !important;
+  --input-bgcolor: #131421 !important;
   --input-color: #fff !important;
   --input-border-color: #8a8a8a !important;
   --input-error-border-color: #ff848a !important;
   --zoom-controls-bgcolor: #4a4a4a !important;
-  --arrowpanel-background: #181818 !important;
+  --arrowpanel-background: #131421 !important;
   --arrowpanel-color: #fff !important;
   --panel-description-color: #fffb !important;
   --panel-disabled-color: #ababaa !important;
@@ -133,14 +133,6 @@
     background-color: #e81123 !important;
   }
 
-  .titlebar-close:hover:active {
-    background-color: #ef6b76 !important;
-  }
-
-  toolbar[brighttext] .titlebar-close:hover:active {
-    background-color: #9c1420 !important;
-  }
-
   /* library window theme */
 
   @media (prefers-color-scheme: dark) {
@@ -179,12 +171,6 @@
 }
 
 /* side bar theme */
-#sidebar-box:not([lwt-sidebar]) {
-  --sidebar-background-color: #f7f7f7 !important;
-  --sidebar-text-color: #000 !important;
-  appearance: none !important;
-}
-
 #sidebar-box[style*="--sidebar-background-color: rgb(56, 56, 61"] {
   --sidebar-background-color: #3b3b3b !important;
   --sidebar-text-color: #fff !important;
