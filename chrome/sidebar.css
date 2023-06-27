@@ -23,6 +23,24 @@
   background-color: var(--toolbar-bgcolor) !important;
 }
 
+#main-window #urlbar[breakout][breakout-extend] {
+  border: 0px solid yellow !important;
+  box-shadow: none !important;
+  margin-left: 35vw !important;
+  margin-top: 20vh !important;
+  transition: 0.1s all;
+}
+
+#main-window #urlbar[breakout][breakout-extend] > #urlbar-input-container {
+  height: 50px !important;
+  font-size: 16px !important;
+  padding: 0px 25px !important;
+  background-color: var(--toolbar-field-background-color) !important;
+  border-radius: 5px !important;
+  margin: 12px !important;
+  width: auto !important;
+}
+
 /* side bar active */
 
 #main-window[titlepreface*="[S] "] #titlebar {
@@ -32,7 +50,7 @@
 #main-window[titlepreface*="[S] "] #nav-bar {
   --blah: calc(var(--theme-spacing) + var(--theme-button-size));
   position: relative !important;
-  top: 12px !important;
+  top: 3px !important;
   overflow: visible !important;
   background: none !important;
   box-shadow: none !important;
@@ -51,17 +69,7 @@
   margin-left: -6px !important;
   height: 60px !important;
 }
-#main-window[titlepreface*="[S] "] #nav-bar toolbarbutton,
-#main-window[titlepreface*="[S] "] #nav-bar toolbaritem {
-  padding: 0 !important;
-  padding-inline: 2px !important;
-}
-#main-window[titlepreface*="[S] "] #urlbar-container,
-#main-window[titlepreface*="[S] "] #nav-bar {
-  position: absolute !important;
-  display: flex;
-  left: 0px;
-}
+
 #main-window[titlepreface*="[S] "] #reload-button > .toolbarbutton-icon,
 #main-window[titlepreface*="[S] "] #stop-button > .toolbarbutton-icon {
   padding: var(--toolbarbutton-inner-padding) !important;
@@ -81,11 +89,6 @@
 
 #main-window[titlepreface*="[S] "] #urlbar[breakout][breakout-extend] {
   width: 150% !important;
-  border: 0px solid yellow !important;
-  box-shadow: none !important;
-  margin-left: 35vw !important;
-  margin-top: 20vh !important;
-  transition: 0.1s all;
 }
 
 #main-window[titlepreface*="[S] "] #urlbar #userContext-label {
@@ -209,10 +212,6 @@
   background-color: var(--toolbar-bgcolor) !important;
 }
 
-/* #main-window[titlepreface*="[S] "] .titlebar-spacer {
-  display: none !important;
-} */
-
 #main-window[titlepreface*="[S] "] .titlebar-buttonbox-container,
 #main-window[titlepreface*="[S] "]
   #TabsToolbar
@@ -272,15 +271,14 @@ toolbarbutton:where([disabled="true"]) {
 #main-window:not([titlepreface="[S] "]) #urlbar {
   --urlbar-container-padding: 0 var(--theme-spacing);
   --urlbar-margin-inline: 0px;
-  --urlbar-height: var(--theme-urlbar-height) !important;
-  top: 0 !important;
+  --urlbar-height: 30px !important;
+  top: 4 !important;
   width: 400px !important;
   box-shadow: rgba(0, 0, 0, 0.1) 1.8px 1.5px 1px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px !important;
   font-size: 12px !important;
   transition: 0.1s all;
   padding: var(--urlbar-container-padding) !important;
-  margin: 12px !important;
 }
 #main-window:not([titlepreface="[S] "]) #tracking-protection-icon-container,
 #main-window:not([titlepreface="[S] "]) #urlbar-zoom-button,
@@ -305,23 +303,3 @@ toolbarbutton:where([disabled="true"]) {
 #main-window:not([titlepreface="[S] "]) #titlebar {
   visibility: collapse !important;
 }
-
-/* #main-window:not([titlepreface*="[S] "]) #urlbar[breakout][breakout-extend] {
-  border: 0px solid yellow !important;
-  box-shadow: none !important;
-  margin-left: 35vw !important;
-  margin-top: 20vh !important;
-  transition: 0.1s all;
-}
-
-#main-window:not([titlepreface*="[S] "])
-  #urlbar[breakout][breakout-extend]
-  > #urlbar-input-container {
-  height: 50px !important;
-  font-size: 16px !important;
-  padding: 0px 25px !important;
-  background-color: var(--toolbar-field-background-color) !important;
-  border-radius: 5px !important;
-  margin: 12px !important;
-  width: auto !important;
-} */

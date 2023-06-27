@@ -1,0 +1,10 @@
+#main-window[titlepreface*="[S] "] #urlbar-container,
+#main-window[titlepreface*="[S] "] #nav-bar {
+  position: absolute !important;
+  display: flex;
+  left: 0px;
+}
+
+#main-window[titlepreface*="[S] "] #urlbar {
+  left: 0px !important;
+}

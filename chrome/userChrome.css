@@ -1,5 +1,6 @@
 @import url(theming/color-andy.css);
 @import url(sidebar.css);
+@import url(sidebar-orientation/sidebar-right.css);
 
 #back-button,
 #forward-button {
@@ -7,7 +8,14 @@
 }
 
 #nav-bar toolbarspring {
-  min-width: 53px !important;
+  min-width: 43px !important;
+}
+
+#unified-extensions-button,
+#unified-extensions-button > .toolbarbutton-icon {
+  width: 0px !important;
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 /* Hides File, Edit, ... menu */
