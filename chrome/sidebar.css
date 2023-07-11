@@ -50,7 +50,6 @@
 #main-window[titlepreface*="[S] "] #nav-bar {
   --blah: calc(var(--theme-spacing) + var(--theme-button-size));
   position: relative !important;
-  top: 30px !important;
   overflow: visible !important;
   background: none !important;
   box-shadow: none !important;
@@ -74,11 +73,6 @@
   padding: 0 !important;
   padding-inline: 2px !important;
 } */
-
-#main-window[titlepreface*="[S] "] #reload-button > .toolbarbutton-icon,
-#main-window[titlepreface*="[S] "] #stop-button > .toolbarbutton-icon {
-  padding: var(--toolbarbutton-inner-padding) !important;
-}
 
 #main-window[titlepreface*="[S] "] #urlbar {
   --urlbar-container-padding: 0 var(--theme-spacing);

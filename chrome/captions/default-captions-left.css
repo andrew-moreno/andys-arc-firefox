@@ -1,0 +1,51 @@
+#main-window[titlepreface*="[S] "] #nav-bar {
+  top: 30px !important;
+}
+
+#main-window[titlepreface*="[S] "] #sidebar {
+  margin-top: 110px !important;
+}
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#titlebar-max {
+  -moz-box-ordinal-group: 0;
+}
+
+#titlebar-content {
+  direction: rtl;
+}
+
+#TabsToolbar {
+  direction: rtl;
+}
+
+#tabbrowser-tabs {
+  direction: ltr;
+}
+
+/* Show MIN MAX CLOSE buttons - for windows*/
+.titlebar-buttonbox-container {
+  display: block !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 40px !important;
+}
+
+.titlebar-buttonbox {
+  position: relative;
+  margin-left: 0px;
+  margin-top: -5px !important;
+}
+.titlebar-button {
+  padding: 8px 10px !important;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.titlebar-button > .toolbarbutton-icon {
+  border-radius: 15px;
+  width: 16px !important;
+  height: 16px !important;
+}

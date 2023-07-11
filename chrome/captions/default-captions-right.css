@@ -1,0 +1,67 @@
+#main-window[titlepreface*="[S] "] #nav-bar {
+  top: 30px !important;
+}
+
+#main-window[titlepreface*="[S] "] #sidebar {
+  margin-top: 110px !important;
+}
+
+.titlebar-buttonbox {
+  position: relative;
+  margin-right: 0px;
+  margin-top: -5px !important;
+  padding-left: 80px !important;
+}
+
+.titlebar-button {
+  padding: 8px 10px !important;
+}
+
+.titlebar-button > .toolbarbutton-icon {
+  border-radius: 15px;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* the 12px image renders a 10px icon, and the 10px upscaled gets rounded to 12.5, which
+* rounds up to 13px, which makes the icon one pixel too big on 1.25dppx. Fix: */
+@media (min-resolution: 1.2dppx) and (max-resolution: 1.45dppx) {
+  .titlebar-button > .toolbarbutton-icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
+
+/* 175% dpi should result in the same device pixel sizes as 150% dpi. */
+@media (min-resolution: 1.45dppx) and (max-resolution: 1.7dppx) {
+  .titlebar-button > .toolbarbutton-icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
+
+/* 175% dpi should result in the same device pixel sizes as 150% dpi. */
+@media (min-resolution: 1.7dppx) and (max-resolution: 1.95dppx) {
+  .titlebar-button > .toolbarbutton-icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
+
+/* Show MIN MAX CLOSE buttons - for windows*/
+.titlebar-buttonbox-container {
+  display: block !important;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 40px !important;
+}
+
+:root[tabsintitlebar][sizemode="maximized"] .titlebar-buttonbox-container {
+  top: 5px;
+}
+
+:root[tabsintitlebar] .titlebar-buttonbox {
+  top: 50%;
+  transform: translateY(-50%);
+}

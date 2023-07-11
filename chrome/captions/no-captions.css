@@ -1,0 +1,7 @@
+#main-window[titlepreface*="[S] "] #nav-bar {
+  top: 3px !important;
+}
+
+#main-window[titlepreface*="[S] "] #sidebar {
+  margin-top: 85px !important;
+}
